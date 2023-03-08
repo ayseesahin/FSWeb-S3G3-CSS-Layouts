@@ -1,11 +1,205 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Döküman</title>
+    <title>AYŞE NUR ŞAHİN</title>
+    <link rel="stylesheet" href="index.html">
 </head>
+<style>
+    body {
+        margin: 0;
+    }
+
+    a,
+    p {
+        font-family: "Roboto Mono", monospace;
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 25px;
+        font-family: "Roboto Mono", monospace;
+    }
+
+    .ismim {
+        width: 900px;
+        margin: 0 auto;
+    }
+
+    .giris {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(67, 54, 82);
+        width: 900px;
+        margin: 0 auto;
+    }
+
+    .giris h1 {
+        font-family: "Gloock", serif;
+        color: white;
+        font-size: 30px;
+        margin-left: 40px;
+    }
+
+    .menu ul li {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: rgb(94, 145, 145);
+        text-transform: uppercase;
+    }
+
+    .menu ul li.menu--active {
+        background-color: rgb(106, 80, 75);
+    }
+
+    .menu ul li:hover {
+        background-color: rgb(45, 45, 90);
+    }
+
+    .menu ul li a {
+        color: black;
+        background-color: blanchedalmond;
+        border-style: double;
+        border-color: rgb(139, 106, 170);
+        font-family: "Tilt Prism", cursive;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin: 20px auto;
+    }
+
+
+
+    .project__items {
+        margin-top: auto;
+        margin-bottom: 20px;
+        padding-right: 20px;
+        min-width: 200px;
+        max-width: 400px;
+        text-align: center;
+        border-style: outset;
+
+    }
+
+
+    .list {
+        flex-direction: column;
+        padding: 20px;
+        display: flex;
+        gap: 10px;
+        list-style-type: none;
+    }
+
+    .list li {
+        padding: 10px;
+        flex: 1;
+        border-style: outset;
+    }
+
+
+    .images img {
+        margin-top: 80px;
+        max-width: 400px;
+        height: 590px;
+
+    }
+
+    .footer {
+        display: flex;
+        background-color: rgb(46, 73, 74);
+        justify-content: center;
+        padding: 40px 0 40px 0;
+        width: 900px;
+        margin: 0 auto;
+    }
+
+    .footer__sonuc {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .footer p {
+        color: wheat;
+    }
+
+    button {
+        background-color: black;
+        color: beige;
+        font-size: 18px;
+    }
+
+    button:hover {
+        background-color: rgb(76, 73, 73);
+    }
+</style>
+
+<html>
+
 <body>
-    <h1> Projeler </h1>
+    <div class="bos">
+        <header class="giris">
+
+            <div class="ismim">
+
+                <h1>AYŞE NUR ŞAHİN</h1>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="index.html">Anasayfa</a></li>
+                        <li><a href="about.html">Hakkında</a></li>
+                        <li><a href="contact.html">İletişim</a></li>
+                        <li class="menu--active"><a href="">Projelerim</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+        </header>
+        <section class="projects ismim">
+
+            <nav class="projects__items">
+                <ul class="list">
+                    <li><a
+                            href="https://github.com/ayseesahin/FSWeb-S1G1-Projesi-Web-Development-Projesi-icin-Git">S1G1</a>
+                    </li>
+                    <li><a href="https://github.com/ayseesahin/FSWeb-S1G2-Projesi-Javascripte-giris">S1G2</a></li>
+                    <li><a href="https://github.com/ayseesahin/FSWeb-S1G3-Projesi-Array">S1G3</a></li>
+                    <li><a href="https://github.com/ayseesahin/fsweb-s1g4-nesneler">S1G4</a></li>
+                    <li><a href="https://github.com/ayseesahin/FSWeb-S1-Challenge">S1-Chalange</a></li>
+                    <li><a href="https://github.com/ayseesahin/FSWeb-S2G1-Scope-ve-Closure">S2G1</a></li>
+                    <li><a href="https://github.com/ayseesahin/FSWeb-S2G2-callback-ve-array">S2G2</a></li>
+                    <li><a href="https://github.com/ayseesahin/fsweb-s2g3-more-functions">S2G3</a></li>
+                    <li><a href="https://github.com/ayseesahin/FSWeb-S2G4-JavaScript-tekrar">S2G4</a></li>
+                    <li><a href="https://github.com/ayseesahin/FSWeb-S2-Challenge">S2-Chalange</a></li>
+                    <li><a href="https://github.com/ayseesahin/FSWeb-S3G1-Food-El-Blog">S3G1</a></li>
+                    <li><a href="https://github.com/ayseesahin/FSWeb-S3G2-Intro-CSS">S3G2</a></li>
+                    <li><a href="https://github.com/ayseesahin/FSWeb-S3G3-CSS-Layouts">S3G3</a></li>
+                </ul>
+            </nav>
+            <div class="images">
+                <img src="https://raw.githubusercontent.com/ayseesahin/FSWeb-S3G1-Food-El-Blog/d5472c521b6796e50555db464d57bc6396a8f374/Food-El-Blog-Screenshot.png"
+                    alt="S3G1">
+                <img src="https://raw.githubusercontent.com/ayseesahin/FSWeb-S3G2-Intro-CSS/4a56b97a1731e30af4f665668b850b2ee247abdf/screenshoot.png"
+                    alt="S3G2">
+            </div>
+
+        </section>
+        <footer class="footer">
+            <div class="footer__sonuc ismim">
+                <p>Gördüklerinden memnun musun?</p>
+                <button onclick="document.location='İletişim'">Bana Ulaş</button>
+
+
+            </div>
+        </footer>
+
+    </div>
 </body>
+
 </html>
