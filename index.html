@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="style/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,35 +16,28 @@
 
 
 <body>
-    <div class="bos">
-
-        <header class="giris">
-
-            <div class="ismim">
-
+    <div class="">
+        <header class="header">
+            <div class="containerClamp">
                 <h1>AYŞE NUR ŞAHİN</h1>
                 <nav class="menu">
                     <ul>
-                        <li class="menu--active"><a href="">Anasayfa</a></li>
+                        <li class="menu--active"><a href="index.html">Anasayfa</a></li>
                         <li><a href="about.html">Hakkında</a></li>
                         <li><a href="contact.html">İletişim</a></li>
                         <li><a href="projects.html">Projelerim</a></li>
                     </ul>
                 </nav>
-
             </div>
-
         </header>
 
 
-        <section class="gelisme ismim">
-
-
-            <div class="gelisme__image"><img
+        <section class="about containerClamp">
+            <div class="about__image"><img
                     src="https://turkuazegitim.net/wp-content/uploads/2015/06/Kodlama-1-scaled-400x300.jpg"
                     alt="ana resim">
             </div>
-            <div class="gelisme__hakkimda">
+            <div class="about__content">
                 <h2>AYŞE NUR ŞAHİN</h2>
                 <button onclick="document.location='//github.com/ayseesahin?tab=repositories'">Projelerim</button>
                 <p><span> Anatomi alanında yüksek lisans yapıyorum. Kodlama öğrenmeye sıfırdan başladım güzel
@@ -52,61 +46,57 @@
                         ve öğrenmeye açığım.</span></p>
             </div>
         </section>
-
-        <div class="proje ismim">
-
-
-
-            <div class="proje__item">
-                <a class="proje__image" href="#">
+        <section class="projects containerClamp">
+            <div class="projects__item">
+                <a class="projects__image" href="https://www.w3schools.com/js/default.asp">
                     <img src="resimler/js.png" alt="JS">
                 </a>
                 <p>JavaScript</p>
             </div>
 
-            <div class="proje__item">
-                <a class="proje__image" href="#">
+            <div class="projects__item">
+                <a class="projects__image" href="https://www.w3schools.com/html/default.asp">
                     <img src="resimler/html.png" alt="HTML"></a>
                 <p>HTML</p>
             </div>
-            <div class="proje__item">
-                <a class="proje__image" href="#">
+            <div class="projects__item">
+                <a class="projects__image" href="https://www.w3schools.com/css/default.asp">
                     <img src="resimler/css.png" alt="CSS"></a>
                 <p>CSS</p>
             </div>
-            <div class="proje__item">
-                <a class="proje__image" href="#">
+            <div class="projects__item">
+                <a class="projects__image" href="https://www.w3schools.com/nodejs/default.asp">
                     <img src="resimler/nodeJS.png" alt="NodeJS"></a>
                 <p>NodeJS</p>
             </div>
-            <div class="proje__item">
-                <a class="proje__image" href="#">
-                    <img src="resimler/react.png" alt="React"></a>
+            <div class="projects__item">
+                <a class="projects__image" href="https://www.w3schools.com/react/default.asp">
+                    <img src="resimler/react.png" height="200" alt="React"></a>
                 <p>React</p>
             </div>
-            <div class="proje__item">
-                <a class="proje__image" href="#">
-                    <img src="resimler/Redux.png" alt="Redux"></a>
+            <div class="projects__item">
+                <a class="projects__image" href="https://redux.js.org/">
+                    <img src="resimler/Redux.png" height="200" alt="Redux"></a>
                 <p>Redux</p>
             </div>
-            <div class="proje__item">
-                <a class="proje__image" href="#">
+            <div class="projects__item">
+                <a class="projects__image" href="https://www.w3schools.com/python/default.asp">
                     <img src="resimler/Python.jpg" alt="Python"></a>
                 <p>Python</p>
             </div>
-            <div class="proje__item">
-                <a class="proje__image" href="#">
+            <div class="projects__item">
+                <a class="projects__image" href="https://www.w3schools.com/sql/default.asp">
                     <img src="resimler/SQL.png" alt="SQL"></a>
                 <p>SQL</p>
             </div>
-        </div>
+        </section>
 
         <footer class="footer">
-            <div class="footer__sonuc ismim">
+            <div class="footer__cta containerClamp">
                 <p>Gördüklerinden memnun musun?</p>
-                <button onclick="document.location='İletişim'">Bana Ulaş</button>
-
-
+                <button
+                    onclick="document.location='//www.linkedin.com/in/ay%C5%9Fe-nur-%C5%9Fahin-758b66b3?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BIgE4Kup4Sbi8pEkpub1X3w%3D%3Dhttps://www.linkedin.com/in/ayşe-nur-şahin-758b66b3/'">Bana
+                    Ulaş</button>
 
             </div>
         </footer>

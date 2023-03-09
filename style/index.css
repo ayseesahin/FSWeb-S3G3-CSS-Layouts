@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 a,
@@ -15,58 +16,64 @@ h2 {
   font-family: "Roboto Mono", monospace;
 }
 
-.ismim {
-  width: 900px;
+.containerClamp {
   margin: 0 auto;
 }
 
-.giris {
+.header {
   display: flex;
   flex-direction: column;
-  background-color: rgb(67, 54, 82);
-  width: 900px;
-  margin: 0 auto;
+  background-color: rgb(132, 120, 147);
 }
 
-.giris h1 {
+.header h1 {
   font-family: "Gloock", serif;
   color: white;
   font-size: 30px;
-  margin-left: 40px;
+}
+
+.menu ul {
+  padding-inline-start: 0;
 }
 
 .menu ul li {
   display: inline-block;
+  border-radius: 5px;
   padding: 10px 20px;
-  background-color: rgb(94, 145, 145);
+  background-color: rgb(110, 170, 170);
   text-transform: uppercase;
+  transition: background-color 0.5s ease-in-out;
 }
 
 .menu ul li.menu--active {
-  background-color: rgb(106, 80, 75);
+  background-color: rgb(171, 134, 126);
 }
 
 .menu ul li:hover {
-  background-color: rgb(45, 45, 90);
+  background-color: rgb(80, 80, 180);
 }
 .menu ul li a {
   color: black;
   background-color: blanchedalmond;
   border-style: double;
-  border-color: rgb(139, 106, 170);
+  border-color: rgb(37, 17, 56);
   font-family: "Tilt Prism", cursive;
   font-size: 18px;
   text-decoration: none;
 }
 
-.gelisme {
+.about {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   margin: 20px auto;
 }
 
-.gelisme__hakkimda {
+.about__image img {
+  border-radius: 10px;
+}
+
+.about__content {
   margin-top: auto;
   margin-bottom: 20px;
   padding-right: 20px;
@@ -74,37 +81,31 @@ h2 {
   max-width: 400px;
 }
 
-.proje {
+.projects {
   margin: 20px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.proje__item {
+.projects__item {
   margin-bottom: 20px;
 }
 
-.proje__image img {
-  max-width: 200px;
-  min-height: 200px;
-}
-
-.proje__item p {
-  text-align: center;
-  border-style: outset;
+.projects__image img {
+  background-color: rgb(221, 165, 155);
+  width: 200px;
+  border-radius: 10px;
 }
 
 .footer {
+  background-color: rgb(38, 59, 60);
   display: flex;
-  background-color: rgb(46, 73, 74);
   justify-content: center;
-  padding: 40px 0 40px 0;
-  width: 900px;
-  margin: 0 auto;
+  padding: 40px;
 }
 
-.footer__sonuc {
+.footer__cta {
   display: inline-block;
   text-align: center;
 }
@@ -116,8 +117,76 @@ h2 {
 button {
   background-color: black;
   color: beige;
-  font-size: 18px;
+  padding: 10px 30px;
 }
+
 button:hover {
-  background-color: rgb(76, 73, 73);
+  background-color: rgb(53, 52, 52);
+}
+
+@media only screen and (max-width: 500px) {
+  .header h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+  .menu {
+    text-align: center;
+  }
+  .menu ul li {
+    display: block;
+  }
+
+  .about {
+    justify-content: center;
+  }
+
+  .about__content {
+    padding: 0;
+    text-align: center;
+  }
+
+  .about__content p {
+    text-align: left;
+  }
+
+  .about__image img {
+    width: 100%;
+  }
+
+  .projects__item {
+    width: 40%;
+  }
+
+  .projects__image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .projects {
+    gap: 10px;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 900px) {
+  .about {
+    flex-wrap: nowrap;
+  }
+
+  .about__content {
+    max-width: initial;
+    min-width: initial;
+    overflow: hidden;
+  }
+
+  .projects {
+    gap: 30px;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .containerClamp {
+    width: 900px;
+  }
 }

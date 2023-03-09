@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AYŞE NUR ŞAHİN</title>
     <link rel="stylesheet" href="index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Rampart+One&family=Shantell+Sans&display=swap"
+        rel="stylesheet">
 </head>
+
 <style>
     body {
         margin: 0;
+        padding: 0;
     }
 
     a,
@@ -23,46 +29,48 @@
         font-family: "Roboto Mono", monospace;
     }
 
-    .ismim {
-        width: 900px;
+    .containerClamp {
         margin: 0 auto;
     }
 
-    .giris {
+    .header {
         display: flex;
         flex-direction: column;
-        background-color: rgb(67, 54, 82);
-        width: 900px;
-        margin: 0 auto;
+        background-color: rgb(132, 120, 147);
     }
 
-    .giris h1 {
+    .header h1 {
         font-family: "Gloock", serif;
         color: white;
         font-size: 30px;
-        margin-left: 40px;
+    }
+
+    .menu ul {
+        padding-inline-start: 0;
     }
 
     .menu ul li {
         display: inline-block;
+        border-radius: 5px;
         padding: 10px 20px;
-        background-color: rgb(94, 145, 145);
+        background-color: rgb(110, 170, 170);
         text-transform: uppercase;
+        transition: background-color 0.5s ease-in-out;
     }
 
     .menu ul li.menu--active {
-        background-color: rgb(106, 80, 75);
+        background-color: rgb(171, 134, 126);
     }
 
     .menu ul li:hover {
-        background-color: rgb(45, 45, 90);
+        background-color: rgb(80, 80, 180);
     }
 
     .menu ul li a {
         color: black;
         background-color: blanchedalmond;
         border-style: double;
-        border-color: rgb(139, 106, 170);
+        border-color: rgb(37, 17, 56);
         font-family: "Tilt Prism", cursive;
         font-size: 18px;
         text-decoration: none;
@@ -101,10 +109,11 @@
         padding: 10px;
         flex: 1;
         border-style: outset;
+        background-color: rgb(187, 168, 187)
     }
 
 
-    .images img {
+    .projects__images img {
         margin-top: 80px;
         max-width: 400px;
         height: 590px;
@@ -112,15 +121,13 @@
     }
 
     .footer {
+        background-color: rgb(38, 59, 60);
         display: flex;
-        background-color: rgb(46, 73, 74);
         justify-content: center;
-        padding: 40px 0 40px 0;
-        width: 900px;
-        margin: 0 auto;
+        padding: 40px;
     }
 
-    .footer__sonuc {
+    .footer__cta {
         display: inline-block;
         text-align: center;
     }
@@ -132,22 +139,42 @@
     button {
         background-color: black;
         color: beige;
-        font-size: 18px;
+        padding: 10px 30px;
     }
 
     button:hover {
-        background-color: rgb(76, 73, 73);
+        background-color: rgb(53, 52, 52);
+    }
+
+    @media only screen and (max-width: 500px) {
+
+        .header h1 {
+            margin-left: 0;
+            text-align: center;
+        }
+
+        .menu {
+            text-align: center;
+        }
+
+        .menu ul li {
+            display: block;
+        }
+    }
+
+    @media only screen and (min-width: 900px) {
+
+        .containerClamp {
+            width: 900px;
+        }
     }
 </style>
 
-<html>
 
 <body>
-    <div class="bos">
-        <header class="giris">
-
-            <div class="ismim">
-
+    <div class="">
+        <header class="header">
+            <div class="containerClamp">
                 <h1>AYŞE NUR ŞAHİN</h1>
                 <nav class="menu">
                     <ul>
@@ -157,11 +184,10 @@
                         <li class="menu--active"><a href="">Projelerim</a></li>
                     </ul>
                 </nav>
-
             </div>
-
         </header>
-        <section class="projects ismim">
+
+        <section class="projects containerClamp">
 
             <nav class="projects__items">
                 <ul class="list">
@@ -182,23 +208,23 @@
                     <li><a href="https://github.com/ayseesahin/FSWeb-S3G3-CSS-Layouts">S3G3</a></li>
                 </ul>
             </nav>
-            <div class="images">
+            <div class="projects__images">
                 <img src="https://raw.githubusercontent.com/ayseesahin/FSWeb-S3G1-Food-El-Blog/d5472c521b6796e50555db464d57bc6396a8f374/Food-El-Blog-Screenshot.png"
                     alt="S3G1">
                 <img src="https://raw.githubusercontent.com/ayseesahin/FSWeb-S3G2-Intro-CSS/4a56b97a1731e30af4f665668b850b2ee247abdf/screenshoot.png"
                     alt="S3G2">
             </div>
-
         </section>
-        <footer class="footer">
-            <div class="footer__sonuc ismim">
-                <p>Gördüklerinden memnun musun?</p>
-                <button onclick="document.location='İletişim'">Bana Ulaş</button>
 
+        <footer class="footer">
+            <div class="footer__cta containerClamp">
+                <p>Gördüklerinden memnun musun?</p>
+                <button
+                    onclick="document.location='//www.linkedin.com/in/ay%C5%9Fe-nur-%C5%9Fahin-758b66b3?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BIgE4Kup4Sbi8pEkpub1X3w%3D%3Dhttps://www.linkedin.com/in/ayşe-nur-şahin-758b66b3/'">Bana
+                    Ulaş</button>
 
             </div>
         </footer>
-
     </div>
 </body>
 
